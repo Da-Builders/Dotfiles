@@ -1,0 +1,110 @@
+{
+    "window.commandCenter": false,
+
+    "workbench.colorTheme": "Atom One Dark",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.productIconTheme": "material-product-icons",
+    "workbench.editor.pinnedTabSizing": "compact",
+
+    "explorer.compactFolders": false,
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+
+    "editor.guides.bracketPairs": "active",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.fontFamily": "'FiraCode Nerd Font', 'Droid Sans Mono', 'monospace', monospace",
+    "editor.formatOnSave": true,
+    "editor.fontLigatures": true,
+    "editor.mouseWheelZoom": true,
+    "editor.minimap.enabled": false,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true,
+        "source.organizeImports": true
+    },
+
+    "terminal.integrated.fontFamily": "'FiraCode Nerd Font Mono'",
+
+    "git.enableSmartCommit": true,
+    "git.autofetch": true,
+
+    "projectManager.git.baseFolders": ["~/Documents/Codebase/"],
+
+    "prettier.tabWidth": 4,
+    "auto-close-tag.fullMode": true,
+
+    "cSpell.language": "en-GB, en",
+    "cSpell.allowCompoundWords": true,
+    "cSpell.showAutocompleteSuggestions": true,
+
+    "hungryDelete.keepOneSpace": true,
+    "hungryDelete.keepOneSpaceException": ">;",
+    "hungryDelete.enableSmartBackspace": false,
+
+    "path-intellisense.extensionOnImport": true,
+    "path-intellisense.autoTriggerNextSuggestion": true,
+    "javascript.suggest.paths": false,
+    "typescript.suggest.paths": false,
+
+    "markdown.updateLinksOnFileMove.enabled": "always",
+    "docsView.documentationView.updateMode": "sticky",
+
+    "intellicodeCompletions.language.javascript": true,
+    "intellicodeCompletions.language.typescript": true,
+
+    "editor.semanticTokenColorCustomizations": {
+        "[Atom One Dark]": {
+            "enabled": true,
+            "rules": {
+                "*.typeHint": { "foreground": "#56b6c2", "italic": true },
+                "class.typeHint": { "foreground": "#56b6c2", "italic": true },
+                "variable.typeHint": {
+                    "foreground": "#56b6c2",
+                    "italic": true
+                },
+                "type": { "foreground": "#56b6c2", "italic": true },
+
+                "keyword": "#c678dd",
+                "operator": "#c678dd",
+
+                "arrow": "#abb2bf",
+                "colon": "#abb2bf",
+                "semicolon": "#abb2bf",
+
+                "string": "#98c379",
+                "number": "#d19a66",
+
+                "builtinConstant": "#d19a66",
+
+                "variable": "#abb2bf",
+                "variable.builtin": "#e06c75",
+                "variable.readonly": "#8590a3",
+
+                "property": "#abb2bf",
+                "property.builtin": "#e06c75",
+
+                "parameter": "#d19a66",
+
+                "selfParameter": { "foreground": "#e06c75", "italic": false },
+                "selfParameter.declaration": "#d19a66",
+
+                "function": "#61afef",
+                "function.declaration": { "bold": true },
+                "function.builtin": "#56b6c2",
+
+                "method": "#61afef",
+                "method.declaration": { "bold": true },
+                "magicFunction": "#56b6c2",
+
+                "class": "#e5c07b",
+                "class.declaration": { "bold": true },
+                "class.builtin": "#56b6c2",
+                
+                "decorator": "#61afef",
+                "class.builtin.decorator": "#61afef",
+                "*.decorator": "#61afef",
+
+                "module": "#56b6c2"
+            }
+        }
+    }
+}

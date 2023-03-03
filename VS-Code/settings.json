@@ -1,0 +1,122 @@
+{
+    "window.titleBarStyle": "custom",
+    "window.commandCenter": false,
+
+    "workbench.colorTheme": "Atom One Dark",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.productIconTheme": "material-product-icons",
+    "workbench.editor.pinnedTabSizing": "compact",
+
+    "explorer.compactFolders": false,
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+
+    "editor.guides.bracketPairs": "active",
+    "editor.fontFamily": "'FiraCode Nerd Font', 'Droid Sans Mono', 'monospace', monospace",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.fontLigatures": true,
+    "editor.mouseWheelZoom": true,
+    "editor.minimap.enabled": false,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true,
+        "source.organizeImports": true
+    },
+
+    "terminal.external.linuxExec": "kgx",
+    "terminal.integrated.fontFamily": "'FiraCode Nerd Font Mono'",
+
+    "git.enableSmartCommit": true,
+    "git.autofetch": true,
+    "github.codespaces.createCodespaceInNewWindow": true,
+
+    "projectManager.git.baseFolders": ["~/Documents/Codebase/"],
+
+    "prettier.tabWidth": 4,
+
+    "cSpell.language": "en-GB, en",
+    "cSpell.allowCompoundWords": true,
+    "cSpell.showAutocompleteSuggestions": true,
+
+    "hungryDelete.keepOneSpace": true,
+    "hungryDelete.keepOneSpaceException": ">;",
+    "hungryDelete.enableSmartBackspace": false,
+
+    "path-intellisense.extensionOnImport": true,
+    "path-intellisense.autoTriggerNextSuggestion": true,
+
+    "markdown.updateLinksOnFileMove.enabled": "always",
+    "docsView.documentationView.updateMode": "sticky",
+
+    "autoDocstring.includeName": true,
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.addImport.exactMatchOnly": true,
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.autoImportUserSymbols": true,
+    "python.analysis.completeFunctionParens": true,
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    "python.analysis.inlayHints.pytestParameters": true,
+    "python.analysis.inlayHints.variableTypes": true,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python",
+        "editor.formatOnType": true
+
+    },
+
+    "editor.semanticTokenColorCustomizations": {
+        "[Atom One Dark]": {
+            "enabled": true,
+            "rules": {
+                "*.typeHint": { "foreground": "#56b6c2", "italic": true },
+                "class.typeHint": { "foreground": "#56b6c2", "italic": true },
+                "variable.typeHint": {
+                    "foreground": "#56b6c2",
+                    "italic": true
+                },
+                "type": { "foreground": "#56b6c2", "italic": true },
+
+                "keyword": "#c678dd",
+                "operator": "#c678dd",
+
+                "arrow": "#abb2bf",
+                "colon": "#abb2bf",
+                "semicolon": "#abb2bf",
+
+                "string": "#98c379",
+                "number": "#d19a66",
+
+                "builtinConstant": "#d19a66",
+
+                "variable": "#abb2bf",
+                "variable.builtin": "#e06c75",
+                "variable.readonly": "#8590a3",
+
+                "property": "#abb2bf",
+                "property.builtin": "#e06c75",
+
+                "parameter": "#d19a66",
+
+                "selfParameter": { "foreground": "#e06c75", "italic": false },
+                "selfParameter.declaration": "#d19a66",
+
+                "function": "#61afef",
+                "function.declaration": { "bold": true },
+                "function.builtin": "#56b6c2",
+
+                "method": "#61afef",
+                "method.declaration": { "bold": true },
+                "magicFunction": "#56b6c2",
+
+                "class": "#e5c07b",
+                "class.declaration": { "bold": true },
+                "class.builtin": "#56b6c2",
+                
+                "decorator": "#61afef",
+                "class.builtin.decorator": "#61afef",
+                "*.decorator": "#61afef",
+
+                "module": "#56b6c2"
+            }
+        }
+    }
+}

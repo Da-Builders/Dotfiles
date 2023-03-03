@@ -1,0 +1,94 @@
+[
+    {
+        "key": "ctrl+n",
+        "command": "explorer.newFile"
+    },
+    {
+        "key": "ctrl+tab",
+        "command": "workbench.action.nextEditor"
+    },
+    {
+        "key": "ctrl+shift+tab",
+        "command": "workbench.action.previousEditor"
+    },
+    {
+        "key": "shift+space e",
+        "command": "workbench.view.explorer",
+        "when": "viewContainer.workbench.view.explorer.enabled"
+    },
+    {
+        "key": "shift+space left",
+        "command": "workbench.action.focusSideBar"
+    },
+    {
+        "key": "shift+space shift+left",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "shift+space right",
+        "command": "workbench.action.focusAuxiliaryBar"
+    },
+    {
+        "key": "shift+space shift+right",
+        "command": "workbench.action.toggleAuxiliaryBar"
+    },
+    {
+        "key": "shift+space space",
+        "command": "editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+    },
+    {
+        "key": "shift+space shift+space",
+        "command": "editor.action.triggerParameterHints",
+        "when": "editorHasSignatureHelpProvider && editorTextFocus"
+    },
+    {
+        "key": "shift+space up",
+        "command": "workbench.action.focusActiveEditorGroup"
+    },
+    {
+        "key": "shift+space shift+up",
+        "command": "workbench.action.focusActiveEditorGroup"
+    },
+    {
+        "key": "shift+space down",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
+    },
+    {
+        "key": "shift+space shift+down",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
+    },
+    {
+        "key": "shift+space .",
+        "command": "editor.action.quickFix",
+        "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+space .",
+        "command": "problems.action.showQuickFixes",
+        "when": "problemFocus"
+    },
+    {
+        "key": "shift+space .",
+        "command": "workbench.action.terminal.showQuickFixes",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "shift+space shift+.",
+        "command": "workbench.action.terminal.showQuickFixes",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "shift+space shift+.",
+        "command": "problems.action.showQuickFixes",
+        "when": "problemFocus"
+    },
+    {
+        "key": "shift+space shift+.",
+        "command": "editor.action.quickFix",
+        "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+    }
+]
+

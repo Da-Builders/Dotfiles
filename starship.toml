@@ -1,0 +1,73 @@
+add_newline = false
+
+format = """
+[](#3a3f4b)\
+[ ](fg:#abb2bf bg:#3a3f4b)\
+[](fg:#3a3f4b bg:#31363f)\
+$directory\
+[](fg:#31363f bg:#282c34)\
+$git_branch\
+$git_status\
+[](#282c34)\
+$fill\
+$python\
+$line_break\
+$character\
+"""
+
+[directory]
+style = "fg:#abb2bf bg:#31363f"
+format = "[  $path ]($style)"
+truncation_symbol = "…/"
+truncate_to_repo = true
+truncation_length = 5
+disabled = false
+
+[directory.substitutions]
+"~/Documents/Codebase" = "…/Codebase "
+"Documents" = "Documents "
+"Downloads" = "Downloads "
+"Music" = "Music "
+"Pictures" = "Pictures "
+"Videos" = "Video "
+
+[git_branch]
+style = "fg:#abb2bf bg:#282c34"
+format = '[ $symbol $branch]($style)'
+symbol = ""
+truncation_length = 1023
+truncation_symbol = "…"
+disabled = false
+
+[git_status]
+style = "fg:#abb2bf bg:#282c34"
+format = '[ ($all_status$ahead_behind )]($style)'
+conflicted = ""
+ahead = ""
+behind = ""
+diverged = ""
+up_to_date = ""
+untracked = "?"
+stashed = ""
+modified = "!"
+staged = "+"
+renamed = ""
+deleted = ""
+disabled = false
+
+[fill]
+symbol = "-"
+style = "#abb2bf"
+disabled = false
+
+[character]
+success_symbol = "[](bold green)"
+error_symbol = "[](bold red)"
+format = "$symbol "
+disabled = false
+
+[python]
+symbol = ""
+style = "fg:#abb2bf bg:#282c34"
+format = '[](#282c34)[ $symbol ($version)( $virtualenv) ]($style)[](#282c34)'
+disabled = false
