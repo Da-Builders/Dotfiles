@@ -49,6 +49,9 @@
     "docsView.documentationView.updateMode": "sticky",
 
     "autoDocstring.includeName": true,
+    "autoDocstring.startOnNewLine": true,
+    "autoDocstring.includeExtendedSummary": true,
+
     "python.analysis.typeCheckingMode": "basic",
     "python.analysis.addImport.exactMatchOnly": true,
     "python.analysis.autoImportCompletions": true,
@@ -57,10 +60,14 @@
     "python.analysis.inlayHints.functionReturnTypes": true,
     "python.analysis.inlayHints.pytestParameters": true,
     "python.analysis.inlayHints.variableTypes": true,
+    "python.analysis.importFormat": "relative",
+    "python.analysis.fixAll": [
+        "source.convertImportFormat",
+        "source.unusedImports"
+    ],
     "[python]": {
-        "editor.defaultFormatter": "ms-python.python",
+        "editor.defaultFormatter": "ms-python.black-formatter",
         "editor.formatOnType": true
-
     },
 
     "editor.semanticTokenColorCustomizations": {
@@ -73,7 +80,6 @@
                     "foreground": "#56b6c2",
                     "italic": true
                 },
-                "type": { "foreground": "#56b6c2", "italic": true },
 
                 "keyword": "#c678dd",
                 "operator": "#c678dd",
@@ -85,23 +91,26 @@
                 "string": "#98c379",
                 "number": "#d19a66",
 
-                "builtinConstant": "#d19a66",
+                "builtinConstant": { "foreground": "#d19a66", "italic": true },
 
                 "variable": "#abb2bf",
-                "variable.builtin": "#e06c75",
+                "variable.builtin": { "foreground": "#e06c75", "italic": true },
                 "variable.readonly": "#8590a3",
 
                 "property": "#abb2bf",
                 "property.builtin": "#e06c75",
+                "property.readonly": "#8590a3",
+
+                "enumMember": "#abb2bf",
+                "enumMember.builtin": "#e06c75",
+                "enumMember.readonly": "#8590a3",
 
                 "parameter": "#d19a66",
-
                 "selfParameter": { "foreground": "#e06c75", "italic": false },
-                "selfParameter.declaration": "#d19a66",
+                "clsParameter": { "foreground": "#e06c75", "italic": false },
 
                 "function": "#61afef",
                 "function.declaration": { "bold": true },
-                "function.builtin": "#56b6c2",
 
                 "method": "#61afef",
                 "method.declaration": { "bold": true },
@@ -109,13 +118,17 @@
 
                 "class": "#e5c07b",
                 "class.declaration": { "bold": true },
-                "class.builtin": "#56b6c2",
-                
+                "class.builtin": { "foreground": "#56b6c2", "italic": true },
+
+                "enum": "#e5c07b",
+                "enum.declaration": { "bold": true },
+                "enum.builtin": { "foreground": "#56b6c2", "italic": true },
+
                 "decorator": "#61afef",
                 "class.builtin.decorator": "#61afef",
                 "*.decorator": "#61afef",
 
-                "module": "#56b6c2"
+                "module": "#e5c07b"
             }
         }
     }
