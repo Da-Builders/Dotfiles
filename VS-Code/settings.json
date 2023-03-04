@@ -60,7 +60,6 @@
     "python.analysis.inlayHints.functionReturnTypes": true,
     "python.analysis.inlayHints.pytestParameters": true,
     "python.analysis.inlayHints.variableTypes": true,
-    "python.analysis.importFormat": "relative",
     "python.analysis.fixAll": [
         "source.convertImportFormat",
         "source.unusedImports"
